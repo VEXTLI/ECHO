@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Echo · Vextli — Llaveros NFC de Recuerdo</title>
+<meta name="description" content="Echo by Vextli — llaveros NFC para bodas, XV años, graduaciones y cualquier evento que merece ser recordado.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ── VARIABLES ── */
+:root{
+  --ec:#FF6B5C;
+  --ec2:#F6E7C1;
+  --bg:#0e0705;
+  --bg2:#140c09;
+  --surf:rgba(255,107,92,.06);
+  --txt:#F6E7C1;
+  --txt2:rgba(246,231,193,.6);
+  --txt3:rgba(246,231,193,.35);
+  --brd:rgba(255,107,92,.22);
+  --brd2:rgba(246,231,193,.1);
+}
+
+/* ── BASE ── */
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--ec);border-radius:2px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:18px 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(14,7,5,.94);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--brd2);
+}
+.nav-l{display:flex;align-items:center;gap:14px}
+.nav-logo img{height:32px;display:block}
+.nav-div{width:1px;height:22px;background:var(--brd)}
+.nav-badge{font-family:'Playfair Display',serif;font-style:italic;font-size:.95rem;color:var(--ec)}
+.nav-links{list-style:none;display:flex;gap:28px}
+.nav-links a{color:var(--txt2);text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.nav-links a:hover{color:var(--ec)}
+.nav-r{display:flex;align-items:center;gap:14px}
+.btn-back{color:var(--txt3);text-decoration:none;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--brd2);border-radius:20px}
+.btn-back:hover{color:var(--txt)}
+.btn-cta{background:var(--ec);color:#0e0705;font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:10px 22px;border-radius:24px}
+.btn-cta:hover{opacity:.88}
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.ham span{display:block;width:22px;height:2px;background:var(--txt);border-radius:2px}
+.mob-menu{display:none;position:fixed;inset:0;background:rgba(14,7,5,.97);z-index:190;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mob-menu.open{display:flex}
+.mob-menu a{color:var(--txt);text-decoration:none;font-family:'Playfair Display',serif;font-size:2rem;font-style:italic}
+.mob-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--txt2);font-size:1.5rem;cursor:pointer}
+
+/* ── SECCIONES ── */
+section{padding:100px 48px}
+.s-label{font-size:.7rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ec);margin-bottom:14px;display:block}
+.eventos .s-label{color:#F4A261}
+.eventos .s-title em{color:#F4A261}
+.producto .s-label{color:#E9C46A}
+.producto .s-title em{color:#E9C46A}
+.tech .s-label{color:#2A9D8F}
+.tech .s-title em{color:#2A9D8F}
+.proceso .s-label{color:#E9C46A}
+.casos .s-label{color:#E07A8F}
+.casos .s-title em{color:#E07A8F}
+.s-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.15;color:var(--txt);margin-bottom:20px}
+.s-title em{font-style:italic;color:var(--ec)}
+
+/* ── COLOR VARIETY ── */
+/* Sección demo: warm glow top-right */
+.demo-sec{position:relative;overflow:hidden}
+.demo-sec::before{content:'';position:absolute;top:-120px;right:-80px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,92,.12) 0%,transparent 65%);pointer-events:none;z-index:0}
+.demo-sec > *{position:relative;z-index:1}
+
+/* Eventos: tinte crema muy sutil */
+.eventos{background:linear-gradient(160deg,#140c09 0%,#18100b 100%)}
+
+/* Producto: accent line izq */
+.producto{border-left:none;position:relative}
+.producto::after{content:'';position:absolute;left:0;top:60px;bottom:60px;width:2px;background:linear-gradient(to bottom,transparent,var(--ec),transparent)}
+
+/* Casos: grid con tinte */
+.casos{background:linear-gradient(180deg,#14090d,#110709 100%);position:relative;overflow:hidden}
+.casos::before{content:'';position:absolute;top:-80px;right:-60px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(224,122,143,.1) 0%,transparent 65%);pointer-events:none}
+.caso-card{transition:transform .2s}
+.caso-card:hover{transform:translateY(-3px)}
+.caso-card:nth-child(1){border-top:2px solid #FF6B5C}
+.caso-card:nth-child(2){border-top:2px solid #F4A261}
+.caso-card:nth-child(3){border-top:2px solid #E9C46A}
+.caso-card:nth-child(4){border-top:2px solid #2A9D8F}
+.caso-card:nth-child(5){border-top:2px solid #E07A8F}
+.caso-card:nth-child(6){border-top:2px solid #F4A261}
+
+/* Tech: glow izq azul-coral */
+.tech{position:relative;overflow:hidden;background:#0a0f0e}
+.tech::before{content:'';position:absolute;top:-120px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(42,157,143,.12) 0%,transparent 65%);pointer-events:none}
+.tech::after{content:'';position:absolute;bottom:-80px;left:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,92,.08) 0%,transparent 65%);pointer-events:none}
+.tech::before{content:'';position:absolute;bottom:-100px;left:-60px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,92,.08) 0%,transparent 65%);pointer-events:none}
+
+/* Proceso: highlight steps */
+.proceso{background:linear-gradient(160deg,#120e06,#0e0705);position:relative;overflow:hidden}
+.proceso::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:200px;background:radial-gradient(ellipse,rgba(233,196,106,.06) 0%,transparent 70%);pointer-events:none}
+.paso-num{color:var(--ec);font-size:clamp(2.5rem,5vw,4rem);font-family:'Playfair Display',serif;font-weight:700;line-height:1;opacity:.9}
+
+/* ── BIOPAGE FUSION Echo + Sites ── */
+.biopage{background:#0d0608;overflow:hidden;position:relative}
+.biopage::before{content:'';position:absolute;top:-100px;right:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(107,33,168,.3) 0%,transparent 68%);pointer-events:none;z-index:0}
+.biopage::after{content:'';position:absolute;bottom:-80px;left:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,92,.25) 0%,transparent 65%);pointer-events:none;z-index:0}
+.bio-grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(107,33,168,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,107,92,.05) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+.bio-layout{position:relative;z-index:1}
+.bio-fusion-badge{display:inline-flex;align-items:center;border-radius:5px;overflow:hidden;border:1px solid rgba(107,33,168,.4);margin-bottom:20px}
+.bio-fusion-badge .bf-echo{font-size:.52rem;font-weight:900;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .8rem;background:rgba(255,107,92,.2);color:#FF6B5C}
+.bio-fusion-badge .bf-sep{width:1px;background:rgba(107,33,168,.5);align-self:stretch}
+.bio-fusion-badge .bf-sites{font-size:.52rem;font-weight:900;letter-spacing:.25em;text-transform:uppercase;padding:.35rem .8rem;background:rgba(107,33,168,.2);color:#c084fc}
+.bio-fusion-line{height:2px;width:100%;background:linear-gradient(90deg,var(--ec),#6B21A8);border-radius:1px;margin:24px 0 20px}
+.bio-costo{background:rgba(107,33,168,.12);border:1px solid rgba(107,33,168,.3);color:#c084fc}
+.bio-costo svg path,.bio-costo svg circle{stroke:#c084fc}
+/* mockup con borde fusión */
+.bio-mockup{border:1px solid;border-image:linear-gradient(135deg,rgba(255,107,92,.4),rgba(107,33,168,.4)) 1;border-radius:20px}
+.bio-link.hi{background:linear-gradient(90deg,rgba(255,107,92,.15),rgba(107,33,168,.15));border-color:rgba(107,33,168,.35)}
+.s-desc{font-size:1rem;color:var(--txt2);max-width:560px;line-height:1.8}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding:140px 48px 80px;
+  background:radial-gradient(ellipse 65% 55% at 55% 45%, rgba(255,107,92,.08) 0%, transparent 70%);
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--surf);border:1px solid var(--brd);border-radius:20px;
+  padding:6px 16px;margin-bottom:28px;
+}
+.hero-eyebrow .dot{width:7px;height:7px;background:var(--ec);border-radius:50%}
+.hero-eyebrow span{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ec)}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:1.02;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--ec)}
+.hero-sub{font-size:1.05rem;color:var(--txt2);max-width:520px;margin-bottom:40px;line-height:1.8}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-p{display:inline-block;background:var(--ec);color:#0e0705;font-size:.85rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;padding:14px 32px;border-radius:30px}
+.btn-p:hover{opacity:.88}
+.btn-s{display:inline-block;color:var(--txt2);font-size:.85rem;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;padding:14px 32px;border-radius:30px;border:1px solid var(--brd)}
+.btn-s:hover{color:var(--txt);border-color:var(--ec)}
+
+/* ── TICKER ── */
+.ticker{overflow:hidden;border-top:1px solid var(--brd2);border-bottom:1px solid var(--brd2);background:rgba(255,107,92,.03);padding:14px 0;white-space:nowrap}
+.ticker-inner{display:inline-block}
+.tick-item{display:inline-flex;align-items:center;gap:10px;padding:0 28px;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3)}
+.tick-dot{width:4px;height:4px;background:var(--ec);border-radius:50%;flex-shrink:0}
+
+/* ── DEMO ── */
+.demo-sec{background:var(--bg2);padding:100px 48px}
+.demo-wrap{margin-top:52px;display:flex;flex-direction:column;align-items:center;gap:0}
+.demo-stage{
+  width:100%;max-width:560px;height:460px;
+  display:flex;justify-content:center;align-items:center;
+  perspective:1200px;overflow:hidden;
+  background-color:#0a0503;
+  background-image:
+    linear-gradient(rgba(255,107,92,.15) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,107,92,.15) 1px,transparent 1px),
+    linear-gradient(rgba(255,107,92,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,107,92,.05) 1px,transparent 1px);
+  background-size:80px 80px,80px 80px,20px 20px,20px 20px;
+  border-radius:4px;border:1px solid rgba(255,107,92,.2);
+  position:relative;
+}
+.demo-ref{
+  position:absolute;top:12px;left:16px;
+  font-size:.46rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;
+  color:rgba(255,107,92,.3);
+}
+.demo-fade-cover{
+  position:absolute;bottom:0;left:0;right:0;height:90px;
+  background:linear-gradient(to top,#0a0503,transparent);
+  pointer-events:none;
+}
+.flash-bg{
+  position:absolute;inset:0;border-radius:4px;
+  background:radial-gradient(ellipse 60% 50% at 50% 40%,
+    rgba(255,245,200,.95) 0%,rgba(255,220,130,.4) 40%,transparent 70%);
+  opacity:0;pointer-events:none;z-index:1;
+  animation:echo-fl 12s linear infinite;
+}
+@keyframes echo-fl{
+  0%,37%{opacity:0;}39%{opacity:1;}42%{opacity:0;}100%{opacity:0;}
+}
+.cine-world{
+  position:relative;width:320px;height:320px;
+  transform-style:preserve-3d;
+  z-index:2;
+  transform:rotateX(12deg) rotateY(-6deg);
+}
+.cine-keychain{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%) translateZ(-70px);
+  z-index:2;
+}
+.cine-wave{
+  position:absolute;top:50%;left:50%;
+  width:76px;height:96px;
+  border:1.5px solid var(--ec);border-radius:11px;
+  transform:translate(-50%,-50%) translateZ(-70px);
+  opacity:0;z-index:3;
+  animation:echo-wave 12s linear infinite;
+}
+.cine-wave:nth-child(4){animation-delay:.4s;}
+.cine-wave:nth-child(5){animation-delay:.8s;}
+@keyframes echo-wave{
+  0%,57%{opacity:0;transform:translate(-50%,-50%) translateZ(-70px) scale(1);}
+  61%{opacity:1;}
+  70%{opacity:0;transform:translate(-50%,-50%) translateZ(-70px) scale(2.6);}
+  100%{opacity:0;}
+}
+.cine-phone{
+  will-change:transform;
+  position:absolute;top:50%;left:50%;
+  width:100px;height:196px;
+  transform-style:preserve-3d;
+  z-index:10;
+  animation:echo-ph 12s cubic-bezier(.4,0,.2,1) infinite;
+}
+@keyframes echo-ph{
+  0%,14%  {transform:translate(-50%,-50%) translateZ(205px) translateX(0px)   rotateY(0deg)   rotateX(-6deg);}
+  22%,32% {transform:translate(-50%,-50%) translateZ(190px) translateX(0px)   rotateY(180deg) rotateX(-4deg);}
+  46%,60% {transform:translate(-50%,-50%) translateZ(25px)  translateX(-52px) rotateY(180deg) rotateX(-22deg);}
+  69%,83% {transform:translate(-50%,-50%) translateZ(130px) translateX(0px)   rotateY(180deg) rotateX(-8deg);}
+  92%,100%{transform:translate(-50%,-50%) translateZ(205px) translateX(0px)   rotateY(0deg)   rotateX(-6deg);}
+}
+.phone-back{
+  position:absolute;inset:0;border-radius:18px;
+  background:linear-gradient(145deg,#1c1c1c,#111);
+  border:2px solid rgba(255,255,255,.14);
+  box-shadow:0 20px 50px rgba(0,0,0,.8);
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:flex;align-items:flex-start;justify-content:flex-start;
+  padding:16px 14px;
+}
+.back-cam-ring{
+  width:36px;height:36px;border-radius:50%;
+  background:#0a0a0a;
+  border:2.5px solid rgba(255,255,255,.2);
+  box-shadow:0 0 0 5px rgba(255,255,255,.04),0 0 0 7px rgba(255,255,255,.02),inset 0 2px 6px rgba(0,0,0,.9);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.back-cam-ring::after{
+  content:'';position:absolute;top:6px;left:7px;
+  width:8px;height:5px;border-radius:50%;
+  background:rgba(255,255,255,.12);transform:rotate(-35deg);
+}
+.back-cam-lens{
+  width:20px;height:20px;border-radius:50%;
+  background:radial-gradient(circle at 36% 30%,#1c2d46,#020507);
+  border:1.5px solid rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+}
+.back-cam-core{
+  width:8px;height:8px;border-radius:50%;
+  background:radial-gradient(circle at 38% 32%,#0d1a28,#010203);
+  border:1px solid rgba(255,255,255,.08);
+}
+.phone-front{
+  position:absolute;inset:0;border-radius:18px;
+  background:#060302;
+  border:2px solid rgba(255,255,255,.12);
+  box-shadow:0 20px 50px rgba(0,0,0,.8);
+  transform:rotateY(180deg);
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  overflow:hidden;
+}
+.phone-notch-el{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:48px;height:18px;background:#060302;
+  border-radius:0 0 12px 12px;z-index:10;
+}
+.phone-screen-el{
+  position:absolute;inset:2px;border-radius:14px;
+  background:#060302;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.sc-st{
+  position:absolute;inset:0;opacity:0;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:14px;overflow:hidden;
+}
+.sc-cam-el{background:#08121e;animation:echo-sca 12s linear infinite;}
+@keyframes echo-sca{0%,20%{opacity:0;}24%,42%{opacity:1;}46%,100%{opacity:0;}}
+.sc-done-el{background:#060302;animation:echo-sdone 12s linear infinite;}
+@keyframes echo-sdone{0%,64%{opacity:0;}69%,82%{opacity:1;}87%,100%{opacity:0;}}
+.demo-steps{display:flex;justify-content:center;gap:2.5rem;margin-top:1.4rem;flex-wrap:wrap;}
+.ds-n{font-size:.5rem;font-weight:700;letter-spacing:.28em;color:var(--ec);margin-bottom:.25rem;text-transform:uppercase;}
+.ds-l{font-size:.78rem;color:var(--txt2);}
+
+/* ── EVENTOS ── */
+.eventos{background:var(--bg2)}
+.eventos-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--brd2);
+  border:1px solid var(--brd2);border-radius:16px;overflow:hidden;
+  margin-top:52px;
+}
+.ev-cat{background:var(--bg2);padding:28px 24px;border-top:2px solid var(--ec);transition:transform .2s}
+.ev-cat:hover{transform:translateY(-3px)}
+/* colores por categoría */
+.ev-cat:nth-child(1){border-color:#FF6B5C}
+.ev-cat:nth-child(1) .ev-cat-icon path,.ev-cat:nth-child(1) .ev-cat-icon circle,.ev-cat:nth-child(1) .ev-cat-icon rect{stroke:#FF6B5C}
+.ev-cat:nth-child(2){border-color:#F4A261}
+.ev-cat:nth-child(2) .ev-cat-icon path,.ev-cat:nth-child(2) .ev-cat-icon circle{stroke:#F4A261}
+.ev-cat:nth-child(3){border-color:#E9C46A}
+.ev-cat:nth-child(3) .ev-cat-icon path,.ev-cat:nth-child(3) .ev-cat-icon circle{stroke:#E9C46A}
+.ev-cat:nth-child(4){border-color:#E07A8F}
+.ev-cat:nth-child(4) .ev-cat-icon path,.ev-cat:nth-child(4) .ev-cat-icon circle{stroke:#E07A8F}
+.ev-cat:hover{background:rgba(255,107,92,.03)}
+.ev-cat-icon{width:36px;height:36px;margin-bottom:14px}
+.ev-cat-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:12px}
+.ev-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.ev-list li{font-size:.8rem;color:var(--txt2);padding-left:12px;position:relative;line-height:1.5}
+.ev-list li::before{content:'·';position:absolute;left:0;color:var(--ec)}
+
+/* ── PRODUCTO ── */
+.producto{background:var(--bg)}
+.prod-layout{display:grid;grid-template-columns:1fr;gap:72px;align-items:start;margin-top:52px;max-width:640px}
+.prod-visual{background:var(--bg2);border:1px solid var(--brd2);border-radius:20px;padding:48px;display:flex;align-items:center;justify-content:center}
+.prod-features{display:flex;flex-direction:column;gap:26px}
+.feat-row{display:flex;gap:18px;align-items:flex-start}
+.feat-icon{width:42px;height:42px;border-radius:10px;background:var(--surf);border:1px solid var(--brd2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat-row:nth-child(1) .feat-icon{background:rgba(255,107,92,.1);border-color:rgba(255,107,92,.3)}
+.feat-row:nth-child(2) .feat-icon{background:rgba(233,196,106,.1);border-color:rgba(233,196,106,.3)}
+.feat-row:nth-child(2) .feat-icon path,.feat-row:nth-child(2) .feat-icon rect{stroke:#E9C46A}
+.feat-row:nth-child(3) .feat-icon{background:rgba(42,157,143,.1);border-color:rgba(42,157,143,.3)}
+.feat-row:nth-child(3) .feat-icon path,.feat-row:nth-child(3) .feat-icon rect,.feat-row:nth-child(3) .feat-icon circle{stroke:#2A9D8F}
+.feat-row:nth-child(4) .feat-icon{background:rgba(244,162,97,.1);border-color:rgba(244,162,97,.3)}
+.feat-row:nth-child(4) .feat-icon path,.feat-row:nth-child(4) .feat-icon rect{stroke:#F4A261}
+.feat-row:nth-child(5) .feat-icon{background:rgba(224,122,143,.1);border-color:rgba(224,122,143,.3)}
+.feat-row:nth-child(5) .feat-icon path,.feat-row:nth-child(5) .feat-icon rect{stroke:#E07A8F}
+.feat-body h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:4px}
+.feat-body p{font-size:.85rem;color:var(--txt2);line-height:1.7}
+
+/* ── CASOS ── */
+.casos{background:var(--bg2)}
+.casos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.caso-card{border-radius:16px;border:1px solid var(--brd2);background:var(--bg);overflow:hidden}
+.caso-card:hover{border-color:var(--brd)}
+.caso-top{height:160px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border-bottom:1px solid var(--brd2)}
+.caso-body{padding:22px 24px}
+.caso-body h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:6px}
+.caso-body p{font-size:.82rem;color:var(--txt2);line-height:1.65}
+.caso-tag{display:inline-block;font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:10px;margin-top:10px;background:rgba(255,107,92,.1);color:var(--ec);border:1px solid rgba(255,107,92,.2)}
+
+/* ── TECH ── */
+.tech{background:var(--bg)}
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:52px}
+.tech-card{border:1px solid var(--brd2);border-radius:16px;padding:36px 32px;background:var(--surf)}
+.tech-card:first-child{border-color:rgba(255,107,92,.3);background:rgba(255,107,92,.05)}
+.tech-card:last-child{border-color:rgba(42,157,143,.3);background:rgba(42,157,143,.05)}
+.tech-badge{display:inline-block;font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ec);background:rgba(255,107,92,.1);padding:4px 12px;border-radius:12px;margin-bottom:14px}
+.tech-card:last-child .tech-badge{color:#2A9D8F;background:rgba(42,157,143,.12);border-color:rgba(42,157,143,.25)}
+.tech-card:last-child h3{color:#2A9D8F}
+.tech-card:last-child .detail-list li::before{color:#2A9D8F}
+.tech-card h3{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--txt);margin-bottom:10px}
+.tech-card p{font-size:.88rem;color:var(--txt2);line-height:1.75}
+.detail-list{margin-top:14px;list-style:none;display:flex;flex-direction:column;gap:8px}
+.detail-list li{font-size:.82rem;color:var(--txt2);padding-left:16px;position:relative}
+.detail-list li::before{content:'→';position:absolute;left:0;color:var(--ec);font-size:.7rem;top:3px}
+
+/* ── PROCESO ── */
+.proceso{background:var(--bg2)}
+.proceso-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:52px;position:relative}
+.proceso-steps::before{
+  content:'';position:absolute;
+  top:38px;left:calc(16.66% + 38px);right:calc(16.66% + 38px);
+  height:1px;background:linear-gradient(90deg,transparent,var(--brd),var(--ec),var(--brd),transparent);
+}
+.step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;position:relative;z-index:1}
+.step-num{width:76px;height:76px;border-radius:50%;background:var(--bg2);border:2px solid var(--ec);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.step:nth-child(1) .step-num{border-color:#FF6B5C;background:rgba(255,107,92,.08)}
+.step:nth-child(1) .step-num path{stroke:#FF6B5C}
+.step:nth-child(2) .step-num{border-color:#E9C46A;background:rgba(233,196,106,.08)}
+.step:nth-child(2) .step-num path{stroke:#E9C46A}
+.step:nth-child(3) .step-num{border-color:#2A9D8F;background:rgba(42,157,143,.08)}
+.step:nth-child(3) .step-num path{stroke:#2A9D8F}
+.step h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:8px}
+.step p{font-size:.82rem;color:var(--txt2);line-height:1.65}
+
+/* ── BIOPAGE ── */
+.biopage{background:var(--bg);border-top:1px solid var(--brd2);border-bottom:1px solid var(--brd2)}
+.bio-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.bio-badge{display:inline-flex;gap:8px;align-items:center;background:rgba(246,231,193,.06);border:1px solid rgba(246,231,193,.15);border-radius:20px;padding:5px 14px;margin-bottom:18px}
+.bio-badge .d1{width:8px;height:8px;background:var(--ec);border-radius:50%}
+.bio-badge .d2{width:8px;height:8px;background:#6B21A8;border-radius:50%}
+.bio-badge span{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txt2)}
+.bio-costo{display:inline-flex;align-items:center;gap:6px;background:rgba(246,231,193,.07);border:1px solid rgba(246,231,193,.18);border-radius:12px;padding:5px 14px;margin-top:18px;font-size:.72rem;color:var(--ec2)}
+.bio-mockup{background:rgba(14,7,5,.95);border:1px solid var(--brd);border-radius:20px;padding:28px;max-width:270px;margin:0 auto}
+.bio-avatar{width:58px;height:58px;border-radius:50%;background:var(--surf);border:2px solid var(--brd);margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--ec)}
+.bio-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;text-align:center;margin-bottom:4px}
+.bio-event{font-size:.78rem;color:var(--txt2);text-align:center;margin-bottom:18px}
+.bio-links{display:flex;flex-direction:column;gap:8px}
+.bio-link{background:var(--surf);border:1px solid var(--brd2);border-radius:10px;padding:10px 14px;font-size:.78rem;color:var(--txt2);text-align:center}
+.bio-link.hi{background:rgba(255,107,92,.1);border-color:var(--brd);color:var(--txt)}
+.bio-note{font-size:.65rem;color:var(--txt3);text-align:center;margin-top:10px}
+
+/* ── PRECIOS ── */
+.precios{background:var(--bg2)}
+.price-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--brd2);border:1px solid var(--brd2);border-radius:12px;overflow:hidden;margin-top:48px}
+.pc{background:var(--bg2);padding:1.6rem 1.2rem;position:relative;transition:background .2s}
+.pc:hover{background:rgba(255,107,92,.04)}
+.pc.hot{background:rgba(255,107,92,.08)}
+.pc-pop{position:absolute;top:0;left:0;right:0;background:var(--ec);font-size:.46rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#0e0705;text-align:center;padding:.3rem}
+.pc-tier{font-size:.58rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--ec);margin-bottom:.5rem;margin-top:.15rem}
+.pc.hot .pc-tier{margin-top:1.2rem}
+.pc-range{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--txt);line-height:1.1;margin-bottom:.2rem}
+.pc-units{font-size:.7rem;color:var(--txt3);margin-bottom:.9rem}
+.pc-price-box{background:rgba(255,107,92,.08);border-radius:6px;padding:.65rem;margin-bottom:1rem;text-align:center}
+.pc.hot .pc-price-box{background:rgba(255,107,92,.18)}
+.pc-price{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--ec);line-height:1}
+.pc-sup{font-size:.65rem;font-weight:500;vertical-align:super}
+.pc-unit{font-size:.54rem;color:var(--txt3);letter-spacing:.08em;text-transform:uppercase;margin-top:.2rem}
+.pc-perks{list-style:none;display:flex;flex-direction:column;gap:.42rem;margin-bottom:1.1rem}
+.pc-perks li{font-size:.74rem;color:var(--txt2);padding-left:14px;position:relative;line-height:1.5}
+.pc-perks li::before{content:'→';position:absolute;left:0;color:var(--ec);font-size:.65rem;top:2px}
+.pc-btn{width:100%;font-family:'DM Sans',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:.7rem;border-radius:6px;border:1px solid var(--brd);background:transparent;color:var(--txt2);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.pc-btn:hover{background:var(--ec);color:#0e0705;border-color:var(--ec)}
+.pc.hot .pc-btn{background:var(--ec);color:#0e0705;border-color:var(--ec)}
+.pc.hot .pc-btn:hover{opacity:.88}
+.price-nota{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+.pn-row{display:flex;align-items:flex-start;gap:10px;font-size:.8rem;color:var(--txt2);padding:12px 16px;border:1px solid var(--brd2);border-radius:8px;background:var(--surf)}
+.pn-row svg{flex-shrink:0;margin-top:2px}
+@media(max-width:960px){.price-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.price-grid{grid-template-columns:1fr}}
+
+/* ── CONTACTO ── */
+.contacto{background:var(--bg)}
+.contacto-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.ci{display:flex;align-items:center;gap:14px;padding:16px;border:1px solid var(--brd2);border-radius:12px;background:var(--surf);margin-bottom:12px}
+.ci:hover{border-color:var(--brd)}
+.ci-icon{width:38px;height:38px;border-radius:8px;background:rgba(255,107,92,.1);border:1px solid var(--brd2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-label{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3);margin-bottom:2px}
+.ci-val{font-size:.88rem;color:var(--txt)}
+.form{display:flex;flex-direction:column;gap:14px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form input,.form select,.form textarea{
+  width:100%;background:var(--bg);border:1px solid var(--brd2);border-radius:10px;
+  padding:13px 16px;color:var(--txt);font-family:'DM Sans',sans-serif;font-size:.88rem;
+  outline:none;-webkit-appearance:none;
+}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--ec)}
+.form input::placeholder,.form textarea::placeholder{color:var(--txt3)}
+.form select{color:var(--txt2)}
+.form textarea{resize:vertical;min-height:110px}
+.form-btn{
+  background:var(--ec);color:#0e0705;font-family:'DM Sans',sans-serif;
+  font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  padding:15px 36px;border-radius:28px;border:none;cursor:pointer;align-self:flex-start;
+}
+.form-btn:hover{opacity:.88}
+
+/* ── FOOTER ── */
+footer{background:var(--bg);border-top:1px solid var(--brd2);padding:32px 48px;display:flex;align-items:center;justify-content:space-between}
+.f-brand{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--txt2)}
+.f-brand span{color:var(--ec)}
+.f-copy{font-size:.72rem;color:var(--txt3);margin-top:4px}
+.f-links{list-style:none;display:flex;gap:24px}
+.f-links a{color:var(--txt3);text-decoration:none;font-size:.75rem}
+.f-links a:hover{color:var(--ec)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  nav{padding:16px 24px}
+  .nav-links,.btn-back{display:none}
+  .ham{display:flex}
+  section{padding:72px 24px}
+  .hero{padding:100px 24px 60px}
+  .eventos-grid{grid-template-columns:1fr 1fr}
+  .prod-layout{grid-template-columns:1fr}
+  .casos-grid{grid-template-columns:1fr 1fr}
+  .tech-grid{grid-template-columns:1fr}
+  .proceso-steps{grid-template-columns:1fr;gap:28px}
+  .proceso-steps::before{display:none}
+  .bio-layout{grid-template-columns:1fr}
+  .contacto-layout{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:18px;text-align:center;padding:28px 24px}
+  .f-links{justify-content:center}
+}
+@media(max-width:480px){
+  .eventos-grid,.casos-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-l">
+    <a href="vextli.html" class="nav-logo"><img src="vextli-logo.png" alt="Vextli"></a>
+    <div class="nav-div"></div>
+    <span class="nav-badge">Echo</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#eventos">Eventos</a></li>
+    <li><a href="#producto">Producto</a></li>
+    <li><a href="#casos">Casos</a></li>
+    <li><a href="#tech">Tecnología</a></li>
+    <li><a href="#precios">Precios</a></li>
+  </ul>
+  <div class="nav-r">
+    <a href="vextli.html" class="btn-back">← Volver a Vextli</a>
+    <a href="#contacto" class="btn-cta">Cotizar</a>
+    <button class="ham" id="ham" onclick="tm()" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOB MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="tm()">✕</button>
+  <a href="#eventos" onclick="tm()">Eventos</a>
+  <a href="#producto" onclick="tm()">Producto</a>
+  <a href="#casos" onclick="tm()">Casos</a>
+  <a href="#tech" onclick="tm()">Tecnología</a>
+  <a href="#precios" onclick="tm()">Precios</a>
+  <a href="#contacto" onclick="tm()" style="color:var(--ec)">Cotizar</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div style="max-width:640px">
+    <div class="hero-eyebrow">
+      <div class="dot"></div>
+      <span>Vextli Echo · Llaveros de Recuerdo</span>
+    </div>
+    <h1>Cada momento<br><em>merece</em><br>ser recordado</h1>
+    <p class="hero-sub">
+      Llaveros NFC de recuerdo para bodas, XV años, graduaciones y cualquier celebración.
+      Los invitados suben sus fotos — los anfitriones reciben el álbum completo.
+    </p>
+    <div class="hero-ctas">
+      <a href="#casos" class="btn-p">Ver ejemplos</a>
+      <a href="#contacto" class="btn-s">Cotizar ahora</a>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="tickerInner">
+    <span class="tick-item"><span class="tick-dot"></span>Bodas</span>
+    <span class="tick-item"><span class="tick-dot"></span>XV Años</span>
+    <span class="tick-item"><span class="tick-dot"></span>Graduaciones</span>
+    <span class="tick-item"><span class="tick-dot"></span>Bautizos</span>
+    <span class="tick-item"><span class="tick-dot"></span>Aniversarios</span>
+    <span class="tick-item"><span class="tick-dot"></span>Baby Shower</span>
+    <span class="tick-item"><span class="tick-dot"></span>Cumpleaños</span>
+    <span class="tick-item"><span class="tick-dot"></span>Despedidas</span>
+    <span class="tick-item"><span class="tick-dot"></span>Jubilaciones</span>
+    <span class="tick-item"><span class="tick-dot"></span>Halloween</span>
+    <span class="tick-item"><span class="tick-dot"></span>Festivales</span>
+    <span class="tick-item"><span class="tick-dot"></span>Torneos</span>
+    <span class="tick-item"><span class="tick-dot"></span>Bodas</span>
+    <span class="tick-item"><span class="tick-dot"></span>XV Años</span>
+    <span class="tick-item"><span class="tick-dot"></span>Graduaciones</span>
+    <span class="tick-item"><span class="tick-dot"></span>Bautizos</span>
+    <span class="tick-item"><span class="tick-dot"></span>Aniversarios</span>
+    <span class="tick-item"><span class="tick-dot"></span>Baby Shower</span>
+    <span class="tick-item"><span class="tick-dot"></span>Cumpleaños</span>
+    <span class="tick-item"><span class="tick-dot"></span>Despedidas</span>
+    <span class="tick-item"><span class="tick-dot"></span>Jubilaciones</span>
+    <span class="tick-item"><span class="tick-dot"></span>Halloween</span>
+    <span class="tick-item"><span class="tick-dot"></span>Festivales</span>
+    <span class="tick-item"><span class="tick-dot"></span>Torneos</span>
+  </div>
+</div>
+
+<!-- DEMO -->
+<section class="demo-sec" id="demo">
+  <span class="s-label">¿Cómo funciona?</span>
+  <h2 class="s-title">Así se vive <em>Echo</em></h2>
+  <p class="s-desc">Sin apps, sin fricción. Tomas la foto, acercas el llavero y listo — tu foto queda en el álbum compartido del evento.</p>
+  <div class="demo-wrap">
+    <div class="demo-stage">
+      <span class="demo-ref">ECHO / NFC-DEMO / REV.07</span>
+      <div class="flash-bg"></div>
+      <div class="cine-world">
+        <!-- llavero -->
+        <div class="cine-keychain">
+          <svg width="76" height="96" viewBox="0 0 76 96" fill="none">
+            <circle cx="38" cy="10" r="8"  fill="none" stroke="#FF6B5C" stroke-width="2"/>
+            <circle cx="38" cy="10" r="4"  fill="none" stroke="#FF6B5C" stroke-width="1.8"/>
+            <rect x="10" y="16" width="56" height="74" rx="12" fill="#1c1009" stroke="#FF6B5C" stroke-width="1.8"/>
+            <rect x="14" y="20" width="48" height="66" rx="9"  fill="none" stroke="#F6E7C1" stroke-width=".5" stroke-opacity=".12"/>
+            <rect x="16" y="28" width="42" height="28" rx="6"  fill="#FF6B5C" fill-opacity=".1" stroke="#FF6B5C" stroke-width="1.2"/>
+            <rect x="20" y="32" width="34" height="20" rx="4"  fill="none" stroke="#F6E7C1" stroke-width=".6" stroke-opacity=".25"/>
+            <path d="M61 42 Q67 36 61 30" stroke="#F6E7C1" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity=".5"/>
+            <path d="M67 45 Q75 36 67 27" stroke="#F6E7C1" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity=".32"/>
+            <rect x="16" y="62" width="42" height="26" rx="5"  fill="none" stroke="#FF6B5C" stroke-width=".8" stroke-opacity=".22" stroke-dasharray="2 3"/>
+            <rect x="20" y="65" width="6" height="6" rx="1" fill="none" stroke="#FF6B5C" stroke-width=".8" stroke-opacity=".38"/>
+            <rect x="20" y="74" width="6" height="6" rx="1" fill="none" stroke="#FF6B5C" stroke-width=".8" stroke-opacity=".38"/>
+            <rect x="28" y="65" width="6" height="6" rx="1" fill="none" stroke="#FF6B5C" stroke-width=".8" stroke-opacity=".38"/>
+            <rect x="38" y="65" width="3" height="3" fill="#FF6B5C" fill-opacity=".32"/>
+            <rect x="43" y="65" width="3" height="3" fill="#FF6B5C" fill-opacity=".32"/>
+            <rect x="38" y="71" width="3" height="3" fill="#FF6B5C" fill-opacity=".32"/>
+          </svg>
+        </div>
+        <!-- ondas NFC -->
+        <div class="cine-wave"></div>
+        <div class="cine-wave"></div>
+        <div class="cine-wave"></div>
+        <!-- teléfono -->
+        <div class="cine-phone">
+          <div class="phone-back">
+            <div class="back-cam-ring">
+              <div class="back-cam-lens">
+                <div class="back-cam-core"></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-front">
+            <div class="phone-notch-el"></div>
+            <div class="phone-screen-el">
+              <!-- visor selfie -->
+              <div class="sc-st sc-cam-el">
+                <svg width="92" height="168" viewBox="0 0 92 168" fill="none">
+                  <path d="M7 28 L7 7 L28 7"    stroke="#FF6B5C" stroke-width="1.2" fill="none" stroke-opacity=".6"/>
+                  <path d="M85 28 L85 7 L64 7"  stroke="#FF6B5C" stroke-width="1.2" fill="none" stroke-opacity=".6"/>
+                  <path d="M7 140 L7 161 L28 161"   stroke="#FF6B5C" stroke-width="1.2" fill="none" stroke-opacity=".6"/>
+                  <path d="M85 140 L85 161 L64 161" stroke="#FF6B5C" stroke-width="1.2" fill="none" stroke-opacity=".6"/>
+                  <circle cx="28" cy="82" r="18" fill="#F6E7C1" fill-opacity=".07" stroke="#F6E7C1" stroke-width="1.2" stroke-opacity=".38"/>
+                  <ellipse cx="28" cy="69" rx="16" ry="7" fill="#F6E7C1" fill-opacity=".12"/>
+                  <circle cx="22" cy="79" r="2.5" fill="#F6E7C1" fill-opacity=".6"/>
+                  <circle cx="34" cy="79" r="2.5" fill="#F6E7C1" fill-opacity=".6"/>
+                  <path d="M22 90 Q28 96 34 90" stroke="#F6E7C1" stroke-width="1.3" fill="none" stroke-opacity=".5" stroke-linecap="round"/>
+                  <circle cx="64" cy="82" r="18" fill="#F6E7C1" fill-opacity=".06" stroke="#F6E7C1" stroke-width="1.2" stroke-opacity=".33"/>
+                  <ellipse cx="64" cy="69" rx="16" ry="8" fill="#F6E7C1" fill-opacity=".1"/>
+                  <circle cx="58" cy="79" r="2.5" fill="#F6E7C1" fill-opacity=".55"/>
+                  <circle cx="70" cy="79" r="2.5" fill="#F6E7C1" fill-opacity=".55"/>
+                  <path d="M58 90 Q64 96 70 90" stroke="#F6E7C1" stroke-width="1.3" fill="none" stroke-opacity=".45" stroke-linecap="round"/>
+                  <circle cx="79" cy="18" r="4" fill="#FF6B5C" fill-opacity=".8"/>
+                  <rect x="17" y="46" width="58" height="72" rx="3" fill="none" stroke="#F6E7C1" stroke-width=".6" stroke-opacity=".18" stroke-dasharray="3 4"/>
+                  <circle cx="46" cy="152" r="7"   fill="none" stroke="#F6E7C1" stroke-width="1.5" stroke-opacity=".5"/>
+                  <circle cx="46" cy="152" r="3.5" fill="#F6E7C1" fill-opacity=".28"/>
+                </svg>
+              </div>
+              <!-- foto subida -->
+              <div class="sc-st sc-done-el">
+                <svg width="92" height="168" viewBox="0 0 92 168" fill="none">
+                  <text x="46" y="20" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#FF6B5C" fill-opacity=".8" letter-spacing="1.5" font-weight="700">ALBUM · ECHO</text>
+                  <line x1="8" y1="25" x2="84" y2="25" stroke="#FF6B5C" stroke-width=".5" stroke-opacity=".2"/>
+                  <rect x="8"  y="30" width="22" height="17" rx="2" fill="#FF6B5C" fill-opacity=".1"/>
+                  <rect x="32" y="30" width="22" height="17" rx="2" fill="#F6E7C1" fill-opacity=".05"/>
+                  <rect x="56" y="30" width="28" height="17" rx="2" fill="#FF6B5C" fill-opacity=".08"/>
+                  <rect x="8"  y="49" width="34" height="14" rx="2" fill="#F6E7C1" fill-opacity=".04"/>
+                  <rect x="44" y="49" width="40" height="14" rx="2" fill="#FF6B5C" fill-opacity=".08"/>
+                  <rect x="8" y="67" width="76" height="52" rx="4" fill="#FF6B5C" fill-opacity=".1" stroke="#FF6B5C" stroke-width="1.5"/>
+                  <circle cx="30" cy="90" r="13" fill="#F6E7C1" fill-opacity=".08" stroke="#F6E7C1" stroke-width=".8" stroke-opacity=".28"/>
+                  <circle cx="58" cy="90" r="13" fill="#F6E7C1" fill-opacity=".07" stroke="#F6E7C1" stroke-width=".8" stroke-opacity=".24"/>
+                  <circle cx="25" cy="87" r="1.8" fill="#F6E7C1" fill-opacity=".5"/>
+                  <circle cx="35" cy="87" r="1.8" fill="#F6E7C1" fill-opacity=".5"/>
+                  <path d="M25 95 Q30 99 35 95" stroke="#F6E7C1" stroke-width="1" fill="none" stroke-opacity=".4" stroke-linecap="round"/>
+                  <circle cx="53" cy="87" r="1.8" fill="#F6E7C1" fill-opacity=".45"/>
+                  <circle cx="63" cy="87" r="1.8" fill="#F6E7C1" fill-opacity=".45"/>
+                  <path d="M53 95 Q58 99 63 95" stroke="#F6E7C1" stroke-width="1" fill="none" stroke-opacity=".38" stroke-linecap="round"/>
+                  <rect x="54" y="69" width="28" height="10" rx="5" fill="#FF6B5C"/>
+                  <text x="68" y="76.5" text-anchor="middle" font-family="sans-serif" font-size="5" fill="white" letter-spacing=".8" font-weight="700">NUEVA</text>
+                  <rect x="8" y="128" width="76" height="24" rx="12" fill="#FF6B5C"/>
+                  <text x="46" y="143" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white" letter-spacing="1" font-weight="700">FOTO SUBIDA</text>
+                  <text x="46" y="160" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#F6E7C1" fill-opacity=".28" letter-spacing=".8">compartida con el álbum</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-fade-cover"></div>
+    </div>
+    <div class="demo-steps">
+      <div><div class="ds-n">01</div><div class="ds-l">Selfie en el evento</div></div>
+      <div><div class="ds-n">02</div><div class="ds-l">Tap al llavero Echo</div></div>
+      <div><div class="ds-n">03</div><div class="ds-l">Foto subida al álbum</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="eventos" id="eventos">
+  <span class="s-label">Versatilidad total</span>
+  <h2 class="s-title">Un llavero, <em>infinitas</em> historias</h2>
+  <p class="s-desc">Echo se adapta a cualquier celebración — desde una boda íntima hasta un torneo escolar. Cada llavero es único y lleva consigo la historia del momento.</p>
+  <div class="eventos-grid">
+
+    <div class="ev-cat">
+      <svg class="ev-cat-icon" viewBox="0 0 36 36" fill="none">
+        <path d="M18 30C18 30 7 22 7 14C7 9.6 10.6 6 15 6C16.8 6 18 7 18 7C18 7 19.2 6 21 6C25.4 6 29 9.6 29 14C29 22 18 30 18 30Z" stroke="#FF6B5C" stroke-width="1.8"/>
+      </svg>
+      <div class="ev-cat-title">Celebraciones familiares</div>
+      <ul class="ev-list">
+        <li>Bautizos y primeras comuniones</li>
+        <li>Bodas y aniversarios</li>
+        <li>XV años</li>
+        <li>Fiestas de cumpleaños</li>
+        <li>Navidad y Año Nuevo</li>
+        <li>Despedidas de soltero/a</li>
+      </ul>
+    </div>
+
+    <div class="ev-cat">
+      <svg class="ev-cat-icon" viewBox="0 0 36 36" fill="none">
+        <polygon points="18,4 32,12 18,20 4,12" stroke="#FF6B5C" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M9 16.5V24C9 24 13 28 18 28C23 28 27 24 27 24V16.5" stroke="#FF6B5C" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div class="ev-cat-title">Etapas de vida</div>
+      <ul class="ev-list">
+        <li>Graduaciones universitarias</li>
+        <li>Preparatoria y secundaria</li>
+        <li>Gender reveal / Sip &amp; see</li>
+        <li>Jubilaciones</li>
+        <li>Diplomados y posgrados</li>
+        <li>Inicio de nueva etapa</li>
+      </ul>
+    </div>
+
+    <div class="ev-cat">
+      <svg class="ev-cat-icon" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="12" stroke="#FF6B5C" stroke-width="1.8"/>
+        <path d="M18 11V18L22 21" stroke="#FF6B5C" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div class="ev-cat-title">Eventos sociales</div>
+      <ul class="ev-list">
+        <li>Reuniones temáticas</li>
+        <li>Halloween y disfraces</li>
+        <li>Pool parties</li>
+        <li>Reencuentros de generación</li>
+        <li>Fiestas sorpresa</li>
+        <li>Exalumnos</li>
+      </ul>
+    </div>
+
+    <div class="ev-cat">
+      <svg class="ev-cat-icon" viewBox="0 0 36 36" fill="none">
+        <path d="M18 4L21 13H31L23 18.5L26 28L18 22L10 28L13 18.5L5 13H15Z" stroke="#FF6B5C" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+      <div class="ev-cat-title">Eventos comunitarios</div>
+      <ul class="ev-list">
+        <li>Ferias locales</li>
+        <li>Festivales de música y danza</li>
+        <li>Torneos escolares</li>
+        <li>Ligas deportivas amateur</li>
+        <li>Eventos parroquiales</li>
+        <li>Festejos culturales</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTO -->
+<section class="producto" id="producto">
+  <span class="s-label">El accesorio</span>
+  <h2 class="s-title">Llavero de recuerdo <em>Echo</em></h2>
+  <div class="prod-layout">
+
+    <div class="prod-features">
+      <div class="feat-row">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <path d="M10 2L12 8H18L13 12L15 18L10 14L5 18L7 12L2 8H8Z" stroke="#FF6B5C" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="feat-body">
+          <h3>100% personalizable</h3>
+          <p>Nombre, fecha, paleta de colores y diseño — cada llavero es un objeto único creado para ese momento irrepetible.</p>
+        </div>
+      </div>
+      <div class="feat-row">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <rect x="3" y="3" width="14" height="14" rx="4" stroke="#FF6B5C" stroke-width="1.5"/>
+            <path d="M7 10L9 12L13 8" stroke="#FF6B5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="feat-body">
+          <h3>NFC + QR grabado</h3>
+          <p>Chip NFC al frente para tap instantáneo. QR grabado físicamente al reverso — sin batería, sin apps, funciona para siempre.</p>
+        </div>
+      </div>
+      <div class="feat-row">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <path d="M4 5L10 3L16 5V10C16 14 13 16.5 10 17.5C7 16.5 4 14 4 10Z" stroke="#FF6B5C" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="feat-body">
+          <h3>PLA impreso en 3D</h3>
+          <p>Fabricado en PLA de alta calidad mediante impresión 3D — ligero, resistente y con acabado uniforme en cada pieza.</p>
+        </div>
+      </div>
+      <div class="feat-row">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <circle cx="10" cy="8" r="4" stroke="#FF6B5C" stroke-width="1.5"/>
+            <path d="M4 18C4 15 6.7 13 10 13C13.3 13 16 15 16 18" stroke="#FF6B5C" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="feat-body">
+          <h3>Álbum colaborativo</h3>
+          <p>Al acercar el llavero, los invitados acceden al álbum y suben sus fotos. Los anfitriones reciben todo el material al finalizar el evento.</p>
+        </div>
+      </div>
+      <div class="feat-row">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <circle cx="10" cy="10" r="7" stroke="#FF6B5C" stroke-width="1.5"/>
+            <path d="M10 7V10.5L13 12" stroke="#FF6B5C" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="feat-body">
+          <h3>Recuerdo permanente</h3>
+          <p>El NFC y el QR seguirán activos para siempre. Un objeto físico que guarda la memoria digital de forma indefinida.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section class="casos" id="casos">
+  <span class="s-label">Inspiración</span>
+  <h2 class="s-title">Echo en <em>acción</em></h2>
+  <div class="casos-grid">
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <circle cx="56" cy="60" r="24" fill="none" stroke="#F6E7C1" stroke-width="2" stroke-opacity=".5"/>
+          <circle cx="84" cy="60" r="24" fill="none" stroke="#FF6B5C" stroke-width="2" stroke-opacity=".5"/>
+          <path d="M38 30L41 39L50 42L41 45L38 54L35 45L26 42L35 39Z" fill="#F6E7C1" fill-opacity=".45"/>
+          <path d="M108 78L111 86L119 88L111 90L108 98L105 90L97 88L105 86Z" fill="#FF6B5C" fill-opacity=".5"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Bodas y XV años</h3>
+        <p>Cada invitado sube sus fotos al álbum colaborativo. Los novios o quinceañera reciben cientos de recuerdos desde todos los ángulos.</p>
+        <span class="caso-tag">Lo más solicitado</span>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <polygon points="70,18 102,36 102,68 70,86 38,68 38,36" fill="none" stroke="#F6E7C1" stroke-width="1.8" stroke-opacity=".45"/>
+          <rect x="52" y="74" width="36" height="26" rx="4" fill="#FF6B5C" fill-opacity=".1" stroke="#FF6B5C" stroke-width="1.2"/>
+          <rect x="58" y="81" width="24" height="4" rx="2" fill="#F6E7C1" fill-opacity=".3"/>
+          <rect x="58" y="89" width="18" height="3" rx="1" fill="#F6E7C1" fill-opacity=".2"/>
+          <path d="M100 26L103 35L112 37L103 39L100 48L97 39L88 37L97 35Z" fill="#F6E7C1" fill-opacity=".5"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Graduaciones</h3>
+        <p>Un recuerdo digital de toda la generación — fotos de la ceremonia, contactos del grupo, memoria compartida entre compañeros.</p>
+        <span class="caso-tag">Muy popular</span>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <circle cx="70" cy="52" r="28" fill="#FF6B5C" fill-opacity=".07" stroke="#FF6B5C" stroke-width="1.5"/>
+          <path d="M70 66C70 66 52 55 52 43C52 36 57 32 63 34C66 35 69 39 70 42C71 39 74 35 77 34C83 32 88 36 88 43C88 55 70 66 70 66Z" fill="#FF6B5C" fill-opacity=".45"/>
+          <circle cx="42" cy="32" r="4" fill="#F6E7C1" fill-opacity=".45"/>
+          <circle cx="100" cy="36" r="3" fill="#FF6B5C" fill-opacity=".55"/>
+          <circle cx="48" cy="88" r="3" fill="#F6E7C1" fill-opacity=".35"/>
+          <circle cx="96" cy="84" r="4" fill="#FF6B5C" fill-opacity=".4"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Baby Shower y Bautizos</h3>
+        <p>Las fotos de los invitados quedan guardadas en el álbum para que los papás las conserven para siempre.</p>
+        <span class="caso-tag">Tendencia</span>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <ellipse cx="70" cy="58" rx="30" ry="28" fill="#FF6B5C" fill-opacity=".08" stroke="#FF6B5C" stroke-width="1.5"/>
+          <path d="M60 50L64 44L68 50Z" fill="#FF6B5C" fill-opacity=".6"/>
+          <path d="M72 50L76 44L80 50Z" fill="#FF6B5C" fill-opacity=".6"/>
+          <path d="M60 66Q64 71 70 69Q76 71 80 66" stroke="#FF6B5C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <rect x="67" y="28" width="6" height="10" rx="3" fill="#F6E7C1" fill-opacity=".4"/>
+          <path d="M36 40L39 48L47 50L39 52L36 60L33 52L25 50L33 48Z" fill="#F6E7C1" fill-opacity=".4"/>
+          <path d="M104 36L107 43L114 45L107 47L104 54L101 47L94 45L101 43Z" fill="#FF6B5C" fill-opacity=".45"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Reuniones temáticas</h3>
+        <p>Halloween, pool party, disfraces — el llavero guarda las fotos del grupo para revisarlas años después.</p>
+        <span class="caso-tag">Original</span>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <circle cx="70" cy="48" r="22" fill="none" stroke="#F6E7C1" stroke-width="1.8" stroke-opacity=".4"/>
+          <path d="M58 40Q70 48 82 40" stroke="#F6E7C1" stroke-width="1.2" fill="none" stroke-opacity=".35"/>
+          <path d="M58 56Q70 48 82 56" stroke="#F6E7C1" stroke-width="1.2" fill="none" stroke-opacity=".35"/>
+          <rect x="54" y="76" width="32" height="24" rx="4" fill="#FF6B5C" fill-opacity=".1" stroke="#FF6B5C" stroke-width="1.2"/>
+          <rect x="60" y="90" width="20" height="4" rx="2" fill="#FF6B5C" fill-opacity=".3"/>
+          <path d="M108 34L111 42L119 44L111 46L108 54L105 46L97 44L105 42Z" fill="#F6E7C1" fill-opacity=".45"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Torneos y deportes</h3>
+        <p>Fotos del equipo, resultado final y momentos del torneo guardados como recuerdo permanente de la temporada.</p>
+        <span class="caso-tag">Nuevo uso</span>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-top">
+        <svg viewBox="0 0 140 120" fill="none" width="140" height="120">
+          <circle cx="58" cy="58" r="16" fill="#FF6B5C" fill-opacity=".1" stroke="#FF6B5C" stroke-width="1.5"/>
+          <line x1="74" y1="58" x2="74" y2="30" stroke="#FF6B5C" stroke-width="2"/>
+          <rect x="74" y="30" width="16" height="10" rx="2" fill="#FF6B5C" fill-opacity=".3"/>
+          <circle cx="82" cy="70" r="14" fill="none" stroke="#F6E7C1" stroke-width="1.2" stroke-opacity=".45"/>
+          <line x1="96" y1="70" x2="96" y2="44" stroke="#F6E7C1" stroke-width="1.5" stroke-opacity=".45"/>
+          <rect x="82" y="44" width="14" height="9" rx="2" fill="#F6E7C1" fill-opacity=".18"/>
+          <path d="M36 60Q32 58 36 56" stroke="#FF6B5C" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity=".45"/>
+          <path d="M30 63Q24 58 30 53" stroke="#FF6B5C" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity=".3"/>
+        </svg>
+      </div>
+      <div class="caso-body">
+        <h3>Festivales y ferias</h3>
+        <p>Los asistentes llevan a casa la memoria del festival — fotos colectivas y momentos del evento guardados en el álbum.</p>
+        <span class="caso-tag">Gran escala</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TECH -->
+<section class="tech" id="tech">
+  <span class="s-label">Tecnología doble</span>
+  <h2 class="s-title">NFC <em>+</em> QR en cada llavero</h2>
+  <p class="s-desc">Dos tecnologías para que absolutamente nadie se quede sin acceder al álbum del evento.</p>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <div class="tech-badge">NFC · Al frente</div>
+      <h3>Tap y listo</h3>
+      <p>El chip NFC está integrado al frente del llavero. Cualquier iPhone o Android lo lee con solo acercarlo — sin apps, sin pasos extra.</p>
+      <ul class="detail-list">
+        <li>Compatible con 82% de smartphones modernos</li>
+        <li>Lectura instantánea, menos de 2 segundo</li>
+        <li>Link actualizable en cualquier momento</li>
+        <li>Funciona indefinidamente sin batería</li>
+      </ul>
+    </div>
+    <div class="tech-card">
+      <div class="tech-badge">QR · Grabado al reverso</div>
+      <h3>Respaldo físico eterno</h3>
+      <p>El código QR está grabado físicamente al reverso — no impreso, no pegado. Es parte del material mismo. Cualquier cámara lo escanea aunque pasen décadas.</p>
+      <ul class="detail-list">
+        <li>Grabado permanente, no se desgasta</li>
+        <li>Compatible con cualquier cámara de teléfono</li>
+        <li>Sin necesidad de NFC activo</li>
+        <li>Apunta al mismo álbum que el chip</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso" id="proceso">
+  <span class="s-label">¿Cómo funciona?</span>
+  <h2 class="s-title">Tres pasos hacia el <em>recuerdo perfecto</em></h2>
+  <div class="proceso-steps">
+    <div class="step">
+      <div class="step-num">
+        <svg viewBox="0 0 32 32" fill="none" width="30" height="30">
+          <path d="M7 16L13 22L25 10" stroke="#FF6B5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Diseña tu llavero</h3>
+      <p>Elige texto grabado, cantidad y tema del evento. El color del llavero viene asignado por defecto según el tipo de celebración — bodas, XV años, baby showers y más tienen su paleta propia. Si necesitas un color específico fuera de la paleta estándar, se cotiza por separado.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">
+        <svg viewBox="0 0 32 32" fill="none" width="30" height="30">
+          <rect x="7" y="7" width="18" height="18" rx="4" stroke="#FF6B5C" stroke-width="2"/>
+          <rect x="11" y="11" width="10" height="10" rx="2" fill="#FF6B5C" fill-opacity=".4"/>
+        </svg>
+      </div>
+      <h3>Activamos el álbum</h3>
+      <p>Configuramos el álbum colaborativo y lo vinculamos a cada llavero. Los invitados podrán subir fotos desde el día del evento.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">
+        <svg viewBox="0 0 32 32" fill="none" width="30" height="30">
+          <circle cx="16" cy="13" r="5" stroke="#FF6B5C" stroke-width="2"/>
+          <path d="M8 26C8 22 11.6 19 16 19C20.4 19 24 22 24 26" stroke="#FF6B5C" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Entrega y celebra</h3>
+      <p>Recibe los llaveros antes del evento. Al terminar, los anfitriones obtienen acceso completo a todas las fotos de los invitados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BIOPAGE -->
+<section class="biopage" id="enlace">
+  <div class="bio-grid-overlay"></div>
+  <div class="bio-layout">
+    <div>
+      <!-- Badge fusión -->
+      <div class="bio-fusion-badge">
+        <span class="bf-echo">Echo</span>
+        <span class="bf-sep"></span>
+        <span class="bf-sites">+ Vextli Sites</span>
+      </div>
+      <h2 class="s-title">El <em>álbum colaborativo</em></h2>
+      <p class="s-desc">Cada llavero Echo activa un álbum compartido donde todos los invitados pueden subir sus fotos. Al finalizar el evento, los anfitriones reciben acceso completo a todo el material.</p>
+      <div class="bio-fusion-line"></div>
+      <ul class="detail-list" style="max-width:420px;">
+        <li>Todos los invitados suben sus fotos desde su celular</li>
+        <li>Los anfitriones reciben acceso completo al finalizar</li>
+        <li>Fotos capturadas desde todos los ángulos</li>
+        <li>Mensaje personalizado de bienvenida al abrir</li>
+        <li>Link permanente, nunca expira</li>
+      </ul>
+      <div class="bio-costo" style="margin-top:20px">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#c084fc" stroke-width="1.2"/><path d="M7 4V7.5L9 9" stroke="#c084fc" stroke-width="1.2" stroke-linecap="round"/></svg>
+        Costo adicional · Cotizar con Vextli Sites
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center">
+      <div class="bio-mockup">
+        <div class="bio-avatar">♡</div>
+        <div class="bio-name">Ana &amp; Carlos</div>
+        <div class="bio-event">Boda · 14 feb 2025 · Querétaro</div>
+        <div class="bio-links">
+          <div class="bio-link hi">Subir mis fotos del evento</div>
+          <div class="bio-link">Ver álbum colaborativo</div>
+          <div class="bio-link">Mensaje de los novios</div>
+        </div>
+        <div class="bio-note">Fotos de todos · Acceso completo para anfitriones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="precios" id="precios">
+  <span class="s-label">Inversión</span>
+  <h2 class="s-title">Precios <em>Echo</em></h2>
+  <p class="s-desc">Precio por pieza según volumen — todos los pedidos incluyen chip NFC activo, QR grabado al reverso y hoja de instrucciones.</p>
+
+  <div class="price-grid">
+
+    <!-- MENUDEO -->
+    <div class="pc">
+      <div class="pc-tier">Menudeo</div>
+      <div class="pc-range">1 – 40</div>
+      <div class="pc-units">piezas</div>
+      <div class="pc-price-box">
+        <div class="pc-price"><span class="pc-sup">$</span>55</div>
+        <div class="pc-unit">por pieza · MXN</div>
+      </div>
+      <ul class="pc-perks">
+        <li>Álbum de fotos en el chip</li>
+        <li>QR grabado al reverso</li>
+        <li>Bolsa de celofán individual</li>
+        <li>Hoja de instrucciones</li>
+      </ul>
+      <button class="pc-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Cotizar</button>
+    </div>
+
+    <!-- MEDIO MENUDEO -->
+    <div class="pc">
+      <div class="pc-tier">Medio menudeo</div>
+      <div class="pc-range">41 – 100</div>
+      <div class="pc-units">piezas</div>
+      <div class="pc-price-box">
+        <div class="pc-price"><span class="pc-sup">$</span>50</div>
+        <div class="pc-unit">por pieza · MXN</div>
+      </div>
+      <ul class="pc-perks">
+        <li>Álbum de fotos en el chip</li>
+        <li>QR grabado al reverso</li>
+        <li>Bolsa de celofán individual</li>
+        <li>Hoja de instrucciones</li>
+      </ul>
+      <button class="pc-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Cotizar</button>
+    </div>
+
+    <!-- MEDIO MAYOREO -->
+    <div class="pc hot">
+      <div class="pc-pop">Más popular</div>
+      <div class="pc-tier">Medio mayoreo</div>
+      <div class="pc-range">101 – 300</div>
+      <div class="pc-units">piezas</div>
+      <div class="pc-price-box">
+        <div class="pc-price"><span class="pc-sup">$</span>46</div>
+        <div class="pc-unit">por pieza · MXN</div>
+      </div>
+      <ul class="pc-perks">
+        <li>Álbum de fotos en el chip</li>
+        <li>Página colaborativa Vextli Sites</li>
+        <li>QR grabado al reverso</li>
+        <li>Bolsa de tela individual</li>
+        <li>Hoja de instrucciones</li>
+      </ul>
+      <button class="pc-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Cotizar</button>
+    </div>
+
+    <!-- MAYOREO -->
+    <div class="pc">
+      <div class="pc-tier">Mayoreo</div>
+      <div class="pc-range">301 – 600</div>
+      <div class="pc-units">piezas</div>
+      <div class="pc-price-box">
+        <div class="pc-price"><span class="pc-sup">$</span>44</div>
+        <div class="pc-unit">por pieza · MXN</div>
+      </div>
+      <ul class="pc-perks">
+        <li>Álbum de fotos en el chip</li>
+        <li>Página colaborativa Vextli Sites</li>
+        <li>QR grabado al reverso</li>
+        <li>Bolsa de tela individual</li>
+        <li>Hoja de instrucciones</li>
+      </ul>
+      <button class="pc-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Cotizar</button>
+    </div>
+
+    <!-- DISTRIBUIDOR -->
+    <div class="pc">
+      <div class="pc-tier">Distribuidor ⭐</div>
+      <div class="pc-range">601+</div>
+      <div class="pc-units">piezas</div>
+      <div class="pc-price-box">
+        <div class="pc-price"><span class="pc-sup">$</span>41</div>
+        <div class="pc-unit">por pieza · MXN</div>
+      </div>
+      <ul class="pc-perks">
+        <li>Álbum de fotos en el chip</li>
+        <li>Página colaborativa Vextli Sites</li>
+        <li>QR grabado al reverso</li>
+        <li>Bolsa de tela individual</li>
+        <li>Hoja de instrucciones</li>
+      </ul>
+      <button class="pc-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Cotizar</button>
+    </div>
+
+  </div>
+
+  <!-- Notas del pedido -->
+  <div class="price-nota">
+    <div class="pn-row">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#FF6B5C" stroke-width="1.2"/><path d="M8 5V8.5" stroke="#FF6B5C" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11" r="1" fill="#FF6B5C"/></svg>
+      Todos los pedidos incluyen una <strong style="color:var(--txt);font-weight:500">&nbsp;hoja preventiva de instrucciones&nbsp;</strong> de uso del chip NFC y QR.
+    </div>
+    <div class="pn-row">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="2" stroke="#FF6B5C" stroke-width="1.2"/><path d="M5 4V3a3 3 0 016 0v1" stroke="#FF6B5C" stroke-width="1.2" stroke-linecap="round"/></svg>
+      Menudeo y medio menudeo se entregan en <strong style="color:var(--txt);font-weight:500">&nbsp;bolsa de celofán&nbsp;</strong> individual. Medio mayoreo en adelante en <strong style="color:var(--txt);font-weight:500">&nbsp;bolsa de tela&nbsp;</strong>.
+    </div>
+    <div class="pn-row">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L9.5 6.5H14L10.5 9L12 13.5L8 11L4 13.5L5.5 9L2 6.5H6.5Z" stroke="#FF6B5C" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      Precios en MXN por pieza. Incluye diseño, grabado, chip NFC activo y configuración del álbum.
+    </div>
+    <div class="pn-row">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h5" stroke="#FF6B5C" stroke-width="1.3" stroke-linecap="round"/></svg>
+      Precios <strong style="color:var(--txt);font-weight:500">&nbsp;no incluyen IVA&nbsp;</strong>Factura disponible a solicitud.
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="contacto-layout">
+    <div>
+      <span class="s-label">Hablemos</span>
+      <h2 class="s-title">Cotiza tu <em>pedido</em></h2>
+      <p class="s-desc" style="margin-bottom:32px">Cuéntanos de tu evento y te preparamos una propuesta en menos de 24 horas.</p>
+      <div class="ci">
+        <div class="ci-icon">
+          <svg viewBox="0 0 28 28" fill="none" width="18" height="18"><path d="M6 8L14 16L22 8" stroke="#FF6B5C" stroke-width="1.5" stroke-linecap="round"/><rect x="4" y="6" width="20" height="16" rx="5" stroke="#FF6B5C" stroke-width="1.5"/></svg>
+        </div>
+        <div><div class="ci-label">Email</div><div class="ci-val"><span id="ci-email"></span></div></div>
+      </div>
+      <div class="ci">
+        <div class="ci-icon">
+          <svg viewBox="0 0 28 28" fill="none" width="18" height="18"><path d="M7 5C7 5 5 7.5 5 12C5 20 14 24 14 24C14 24 23 20 23 12C23 7.5 21 5 21 5C19 8 16.5 9 14 9C11.5 9 9 8 7 5Z" stroke="#FF6B5C" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div><div class="ci-label">WhatsApp</div><div class="ci-val">442 659 7342</div></div>
+      </div>
+      <div class="ci">
+        <div class="ci-icon">
+          <svg viewBox="0 0 28 28" fill="none" width="18" height="18"><rect x="4" y="4" width="20" height="20" rx="6" stroke="#FF6B5C" stroke-width="1.5"/><circle cx="14" cy="14" r="4" stroke="#FF6B5C" stroke-width="1.5"/><circle cx="20" cy="8" r="1.5" fill="#FF6B5C"/></svg>
+        </div>
+        <div><div class="ci-label">Instagram</div><div class="ci-val">@vextli_nfc</div></div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="form-row">
+        <input id="f-nombre" type="text" placeholder="Tu nombre completo">
+        <input id="f-evento" type="text" placeholder="Tipo de evento (boda, XV…)">
+      </div>
+      <input id="f-tel" type="tel" placeholder="WhatsApp +52 44 2000 0000">
+      <input id="f-email" type="email" placeholder="Email (opcional)">
+      <select id="sel-pkg">
+        <option value="" disabled selected>Cantidad aproximada de llaveros</option>
+        <option>1 – 10 piezas</option>
+        <option>11 – 75 piezas</option>
+        <option>76 – 150 piezas</option>
+        <option>151 – 500 piezas</option>
+        <option>501+ piezas</option>
+      </select>
+      <input id="f-fecha" type="text" placeholder="Fecha del evento (dd/mm/aaaa)">
+      <textarea id="f-desc" placeholder="Cuéntanos del evento — tema, colores, material preferido…"></textarea>
+      <button class="form-btn" onclick="submitForm(this)">Enviar solicitud</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-brand">Vextli <span>·</span> Echo</div>
+    <div class="f-copy">2025 Vextli. Llaveros NFC de recuerdo — Querétaro, México.</div>
+  </div>
+  <ul class="f-links">
+    <li><a href="vextli.html">Vextli</a></li>
+    <li><a href="#eventos">Eventos</a></li>
+    <li><a href="#producto">Producto</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</footer>
+
+<script>
+/* ── TICKER con requestAnimationFrame (sin CSS animation) ── */
+(function(){
+  var inner = document.getElementById('tickerInner');
+  if(!inner) return;
+  var pos = 0;
+  var halfW = 0;
+  function measure(){ halfW = inner.scrollWidth / 2; }
+  measure();
+  window.addEventListener('resize', measure);
+  function step(){
+    pos += 0.5;
+    if(halfW > 0 && pos >= halfW) pos = 0;
+    inner.style.transform = 'translateX(-' + pos + 'px)';
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+
+/* ── SCROLL REVEAL ── */
+(function(){
+  var inIframe = false;
+  try{ inIframe = window.self !== window.top; }catch(e){ inIframe = true; }
+  if(inIframe || !('IntersectionObserver' in window)) return;
+  var els = document.querySelectorAll('.feat-row, .caso-card, .ev-cat, .step, .tech-card, .ci, .bio-mockup');
+  els.forEach(function(el){
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity .55s ease, transform .55s ease';
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.opacity = '';
+        e.target.style.transform = '';
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.1});
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+/* ── MOBILE MENU ── */
+function tm(){
+  var h = document.getElementById('ham');
+  var m = document.getElementById('mobMenu');
+  h.classList.toggle('open');
+  m.classList.toggle('open');
+  document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
+}
+
+/* ── FORM → WHATSAPP ── */
+function submitForm(btn){
+  var n  = (document.getElementById('f-nombre')||{}).value||'';
+  var ev = (document.getElementById('f-evento')||{}).value||'';
+  var t  = (document.getElementById('f-tel')||{}).value||'';
+  var em = (document.getElementById('f-email')||{}).value||'';
+  var p  = (document.getElementById('sel-pkg')||{}).value||'';
+  var fe = (document.getElementById('f-fecha')||{}).value||'';
+  var d  = (document.getElementById('f-desc')||{}).value||'';
+  if(!n.trim()||!t.trim()){ alert('Por favor ingresa tu nombre y número de WhatsApp.'); return; }
+  var msg = 'COTIZACION ECHO\n\n'
+    + 'Nombre: ' + n + '\n'
+    + 'Evento: ' + (ev||'-') + '\n'
+    + 'WhatsApp: ' + t + '\n'
+    + 'Email: ' + (em||'-') + '\n'
+    + 'Cantidad: ' + (p||'-') + '\n'
+    + 'Fecha: ' + (fe||'-') + '\n'
+    + 'Detalles: ' + (d||'-');
+  btn.textContent = 'Abriendo WhatsApp…';
+  btn.disabled = true;
+  document.location.href = 'https://wa.me/524426597342?text=' + encodeURIComponent(msg);
+  setTimeout(function(){ btn.textContent = 'Enviar solicitud'; btn.disabled = false; }, 3000);
+}
+
+/* ── EMAIL OBFUSCADO ── */
+(function(){
+  var el = document.getElementById('ci-email');
+  if(!el) return;
+  var u = 'llaverossilex', d = 'gmail', t = 'com';
+  el.innerHTML = '<a href="mai'+'lto:'+u+'@'+d+'.'+t+'" style="color:inherit;text-decoration:none;">'+u+'@'+d+'.'+t+'</a>';
+})();
+</script>
+</body>
+</html>
