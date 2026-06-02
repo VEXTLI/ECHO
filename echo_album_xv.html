@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Álbum — Valentina Herrera</title>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --c1:#9B2463;--c2:#C4307F;--c3:#7A1A4E;--c4:#F0A8D0;
+  --bg:#FDF9FB;--bg2:#F7EFF4;--bg3:#F0E4ED;
+  --ink:#1A0810;--ink2:#3D1828;--muted:#7A5068;
+  --faint:rgba(155,36,99,.14);
+  --f:'Urbanist',sans-serif;--ft:'Cormorant Garamond', serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--f);background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+.album-hero{
+  position:relative;z-index:1;padding:5rem 2rem 3rem;text-align:center;
+  border-bottom:1px solid rgba(155,36,99,.2);
+  background:linear-gradient(180deg,#fff 0%,#FDF9FB 100%);
+}
+.ornament{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-bottom:1.4rem;}
+.ornament-line{flex:1;max-width:60px;height:1px;background:linear-gradient(90deg,transparent,#9B2463);opacity:.7;}
+.ornament-line.r{background:linear-gradient(90deg,#9B2463,transparent);}
+.ornament-diamond{width:7px;height:7px;background:#C4307F;transform:rotate(45deg);flex-shrink:0;}
+.ev-label{font-size:.55rem;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--c1);margin-bottom:1.2rem;}
+.ev-names{
+  font-family:var(--ft);font-size:clamp(2.5rem,8vw,6rem);line-height:.95;
+  color:var(--ink);margin-bottom:.4rem;
+}
+.ev-date{font-family:var(--ft);font-size:clamp(.85rem,2vw,1.1rem);color:var(--muted);margin-bottom:.3rem;}
+.ev-place{font-size:.72rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.ev-stats{
+  display:flex;align-items:center;justify-content:center;gap:3rem;
+  margin-top:2.2rem;padding-top:2rem;border-top:1px solid rgba(155,36,99,.18);flex-wrap:wrap;
+}
+.ev-stat-n{font-family:var(--ft);font-size:2.2rem;color:var(--c1);line-height:1;}
+.ev-stat-l{font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.3rem;}
+.stat-div{width:1px;height:36px;background:rgba(155,36,99,.2);}
+.toolbar{
+  position:sticky;top:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.65rem 1.5rem;background:rgba(FDF9FB,.96);
+  backdrop-filter:blur(16px);border-bottom:1px solid rgba(155,36,99,.18);
+}
+.tb-brand{font-size:.58rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);}
+.tb-brand span{color:var(--c1);}
+.tb-actions{display:flex;gap:.6rem;}
+.tb-btn{
+  font-family:var(--f);font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:.5rem .9rem;border-radius:3px;cursor:pointer;
+  display:flex;align-items:center;gap:.45rem;min-height:36px;transition:all .2s;
+}
+.tb-btn.ghost{border:1px solid rgba(155,36,99,.35);background:transparent;color:var(--muted);}
+.tb-btn.ghost:hover{border-color:var(--c1);color:var(--ink);}
+.tb-btn.solid{background:var(--ink);color:#fff;border:1px solid var(--ink);}
+.tb-btn.solid:hover{background:var(--ink2);}
+.tb-btn.accent{background:var(--c1);color:#fff;border:1px solid var(--c1);}
+.tb-btn.accent:hover{background:var(--c3);}
+.gallery-wrap{padding:1.4rem;background:var(--bg2);}
+.masonry{columns:3;column-gap:10px;}
+.photo-item{
+  break-inside:avoid;margin-bottom:10px;position:relative;
+  border-radius:3px;overflow:hidden;cursor:pointer;background:var(--bg3);
+  opacity:0;animation:fadein .5s ease forwards;
+}
+@keyframes fadein{to{opacity:1;}}
+.photo-item img{width:100%;display:block;transition:transform .5s ease,filter .3s ease;filter:brightness(.97) saturate(.9);}
+.photo-item:hover img{transform:scale(1.04);filter:brightness(1) saturate(1);}
+.photo-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(1A,18,8,.65) 0%,transparent 55%);
+  opacity:0;transition:opacity .3s;
+  display:flex;align-items:flex-end;justify-content:space-between;padding:.8rem;
+}
+.photo-item:hover .photo-overlay{opacity:1;}
+.photo-num{font-size:.5rem;font-weight:700;letter-spacing:.22em;color:rgba(255,255,255,.7);}
+.photo-dl{
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(155,36,99,.85);border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0;
+}
+.photo-dl:hover{background:var(--c2);}
+.photo-item::after{
+  content:'';position:absolute;inset:0;border:0px solid var(--c2);border-radius:3px;
+  transition:border-width .25s ease,opacity .25s ease;opacity:0;pointer-events:none;
+}
+.photo-item:hover::after{border-width:2px;opacity:1;}
+.lightbox{
+  position:fixed;inset:0;z-index:9999;
+  background:rgba(10,2,7,.97);
+  display:none;flex-direction:column;align-items:center;justify-content:center;padding:1rem;
+}
+.lightbox.open{display:flex;}
+.lb-img{
+  max-width:88vw;max-height:80vh;object-fit:contain;border-radius:2px;display:block;
+  box-shadow:0 0 0 1px rgba(155,36,99,.25),0 24px 60px rgba(0,0,0,.7);
+}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:860px;margin-top:1.2rem;}
+.lb-cap{font-family:var(--ft);font-size:.95rem;color:var(--c4);opacity:.8;}
+.lb-close{
+  position:fixed;top:1.2rem;right:1.5rem;width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);
+  font-size:1rem;transition:all .2s;
+}
+.lb-close:hover{background:rgba(196,48,127,.3);border-color:var(--c2);color:#fff;}
+.lb-nav{
+  position:fixed;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);
+  font-size:.9rem;transition:all .2s;
+}
+.lb-nav:hover{background:rgba(196,48,127,.3);border-color:var(--c2);color:#fff;}
+.lb-prev{left:1rem;}.lb-next{right:1rem;}
+.album-footer{
+  text-align:center;padding:3rem 1.5rem;
+  border-top:1px solid rgba(155,36,99,.18);background:#fff;
+}
+.af-msg{
+  font-family:var(--ft);font-size:clamp(1rem,2.5vw,1.4rem);
+  color:var(--muted);margin-bottom:1rem;line-height:1.6;
+}
+.af-brand{font-size:.52rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:rgba(122,106,80,.4);}
+.af-brand span{color:var(--c1);}
+@media(max-width:700px){.masonry{columns:2;}.tb-btn.ghost{display:none;}}
+@media(max-width:400px){.masonry{columns:1;}}
+</style>
+</head>
+<body>
+<div class="lightbox" id="lb" onclick="closeLB(event)">
+  <button class="lb-close" onclick="document.getElementById('lb').classList.remove('open');document.body.style.overflow='';">✕</button>
+  <button class="lb-nav lb-prev" onclick="navLB(-1,event)">←</button>
+  <button class="lb-nav lb-next" onclick="navLB(1,event)">→</button>
+  <img class="lb-img" id="lb-img" src="" alt="">
+  <div class="lb-bar">
+    <span class="lb-cap" id="lb-cap"></span>
+    <button class="tb-btn accent" onclick="dlCurrent()">
+      <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M8 2v8M5 7l3 3 3-3M3 13h10" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Descargar
+    </button>
+  </div>
+</div>
+<header class="album-hero">
+  <div class="ev-label">Álbum de XV Años · Echo by Vextli</div>
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line r"></div>
+  </div>
+  <h1 class="ev-names">Valentina Herrera</h1>
+  <div class="ev-date">15 de marzo, 2025</div>
+  <div class="ev-place">Salón Imperial · Querétaro, México</div>
+  <div class="ev-stats">
+    <div><div class="ev-stat-n">64</div><div class="ev-stat-l">Fotografías</div></div>
+    <div class="stat-div"></div>
+    <div><div class="ev-stat-n">HD</div><div class="ev-stat-l">Descarga libre</div></div>
+  </div>
+</header>
+<div class="toolbar">
+  <span class="tb-brand">Echo · <span>Vextli</span></span>
+  <div class="tb-actions">
+    <button class="tb-btn ghost" onclick="shareAlbum()">
+      <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="12" cy="4" r="1.5" stroke="currentColor" stroke-width="1.4"/><circle cx="4" cy="8" r="1.5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 4.8L5.5 7.2M5.5 8.8l5 2.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Compartir
+    </button>
+    <button class="tb-btn solid">
+      <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M8 2v8M5 7l3 3 3-3M3 13h10" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Descargar todo
+    </button>
+  </div>
+</div>
+<div class="gallery-wrap"><div class="masonry" id="gallery"></div></div>
+<footer class="album-footer">
+  <div class="ornament" style="margin-bottom:1.2rem;">
+    <div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-line r"></div>
+  </div>
+  <p class="af-msg">"Esta noche fue el inicio de la mejor etapa de mi vida."</p>
+  <div class="af-brand">Álbum digital por <span>Echo · Vextli</span></div>
+</footer>
+<script>
+const seeds=[
+  {id:10,label:'Foto 001'},{id:20,label:'Foto 002'},{id:30,label:'Foto 003'},{id:40,label:'Foto 004'},
+  {id:50,label:'Foto 005'},{id:60,label:'Foto 006'},{id:70,label:'Foto 007'},{id:80,label:'Foto 008'},
+  {id:90,label:'Foto 009'},{id:100,label:'Foto 010'},{id:110,label:'Foto 011'},{id:120,label:'Foto 012'},
+  {id:130,label:'Foto 013'},{id:140,label:'Foto 014'},{id:150,label:'Foto 015'},{id:160,label:'Foto 016'},
+  {id:170,label:'Foto 017'},{id:180,label:'Foto 018'},{id:190,label:'Foto 019'},{id:200,label:'Foto 020'},
+  {id:210,label:'Foto 021'},{id:220,label:'Foto 022'},{id:230,label:'Foto 023'},{id:240,label:'Foto 024'},
+];
+const sizes=[{w:400,h:600},{w:600,h:400},{w:400,h:500},{w:600,h:450},{w:400,h:400},{w:600,h:500},{w:400,h:550},{w:600,h:420}];
+let currentIdx=0;
+function buildGallery(){
+  const g=document.getElementById('gallery');g.innerHTML='';
+  seeds.forEach((p,i)=>{
+    const sz=sizes[i%sizes.length];
+    const item=document.createElement('div');
+    item.className='photo-item';item.style.animationDelay=(i*0.04)+'s';
+    item.innerHTML=`<img src="https://picsum.photos/seed/${p.id}/${sz.w}/${sz.h}" alt="${p.label}" loading="lazy">
+      <div class="photo-overlay">
+        <span class="photo-num">${String(i+1).padStart(2,'0')}</span>
+        <button class="photo-dl" onclick="dlPhoto(event,'https://picsum.photos/seed/${p.id}/${sz.w*2}/${sz.h*2}','${p.label}')">
+          <svg viewBox="0 0 16 16" fill="none" width="13" height="13"><path d="M8 2v8M5 7l3 3 3-3M3 13h10" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>`;
+    item.addEventListener('click',()=>openLB(i));
+    g.appendChild(item);
+  });
+}
+function openLB(idx){
+  currentIdx=idx;const p=seeds[idx];const sz=sizes[idx%sizes.length];
+  document.getElementById('lb-img').src=`https://picsum.photos/seed/${p.id}/${sz.w*2}/${sz.h*2}`;
+  document.getElementById('lb-cap').textContent=`${String(idx+1).padStart(2,'0')} / ${seeds.length} · ${p.label}`;
+  document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden';
+}
+function closeLB(e){if(e&&e.target!==document.getElementById('lb'))return;document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+function navLB(dir,e){if(e)e.stopPropagation();currentIdx=(currentIdx+dir+seeds.length)%seeds.length;openLB(currentIdx);}
+function dlPhoto(e,url,name){e.stopPropagation();const a=document.createElement('a');a.href=url;a.download=name+'.jpg';a.target='_blank';a.click();}
+function dlCurrent(){const p=seeds[currentIdx];const sz=sizes[currentIdx%sizes.length];const a=document.createElement('a');a.href=`https://picsum.photos/seed/${p.id}/${sz.w*2}/${sz.h*2}`;a.download=p.label+'.jpg';a.target='_blank';a.click();}
+function shareAlbum(){if(navigator.share){navigator.share({title:'Valentina Herrera',url:window.location.href});}else{navigator.clipboard.writeText(window.location.href).then(()=>alert('Link copiado'));}}
+document.addEventListener('keydown',e=>{if(!document.getElementById('lb').classList.contains('open'))return;if(e.key==='ArrowLeft')navLB(-1,null);if(e.key==='ArrowRight')navLB(1,null);if(e.key==='Escape'){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}});
+buildGallery();
+</script>
+</body>
+</html>
